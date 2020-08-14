@@ -71,10 +71,15 @@ end
 
 #### create a new `JuiceMachine` instance and call the `juice` method
 > irb(main):001:0> juice_machine = JuiceMachine.new
+>
 > irb(main):001:0> juice_machine.juice(5)
+>
 >> 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
+>>
 >> 5 apple juice(s)!
+>>
 >> 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
+>>
 >> => nil
 
 ### Initializing Objects
@@ -116,12 +121,18 @@ end
 #### create an instance of `JuiceMachine` with a number as an argument
 > irb(main):001:0> juice_machine = JuiceMachine.new(188)
 >> ready to juice
+>>
 >> => #<JuiceMachine:0x00007ff2ce2648a0 @orange_count=188>
+>
 > irb(main):001:0> juice_machine.juice(5)
 >> 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
+>>
 >> 5 juice(s)!
+>>
 >> 183 remaining
+>>
 >> 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
+>>
 >> => nil
 
 ### Attribute Readers and Writers (Getters and Setters)
@@ -164,6 +175,7 @@ end
 #### call the orange count getter and setter methods on a new `JuiceMachine` instance
 > irb(main):001:0> juice_machine.orange_count
 >> => 183
+>
 > irb(main):001:0> juice_machine.orange_count = 400
 >> => 400
 
