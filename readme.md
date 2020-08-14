@@ -75,7 +75,7 @@ end
 >
 > 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
 >
-> 5 apple juice(s)!
+> 5 juice(s)!
 >
 > 🍊🧃🍊🧃🍊🧃🍊🧃🍊🧃
 >
@@ -200,8 +200,34 @@ end
 
 ## Classes are fundamental to OOP
 Classes are core feature of Object Oriented Programming (OOP)
-- abstraction
-- encapsulation
+
+Thus far in our knowledge of Ruby classes, we've touched on two of the four core principles of OOP:
+- **abstraction**
+- **encapsulation**
+- inheritance
+- polymorphism
+
+In the same way you don't need to inspect the engine every time you drive a car, classes give us a convenient way to separate and protect the implementation details from the utility.
+
+### Abstraction
+When you drive a car you don't operate or interact with all of the pieces under the hood directly. You use an interface designed to make driving safe and accessible. The steering wheel, pedals, ignition, and console are all abstractions that make the experience of driving a car possible by creating an interface that exposes the ways you can interact with the vehicle while hiding the details that are unnecessary for daily use.
+
+The `JuiceMachine` class is an abstraction. It simplifies the way we can interact with a complex piece of machinery by clearly defining an interface. Instances of `JuiceMachine` can:
+  - get and set the `orange_count` attribute
+  - dispense any number of juices via the `juice` method 
+
+Abstraction is an important concept in web development and we will continue to see ways in which developers, ourselves and others, design tools that are simple to use by using abstraction to hide details that might overwhelm users.
+
+### Encapsulation
+Separating a car's interface from the details under the hood not only simplifies use but it protects the car! The average driver isn't a mechanic and shouldn't modify the inner workings of their vehicle. The hood of the car encapsulates information and functionality that should be protected from the users of the car. It isn't possible to separate the battery from the engine by using the driver's interface, and nobody is allowed to adjust the value the car's milage. Encapsulation is good for both driver and mechanic, and gives integrity to the car and manufacturer. 
+
+Classes give us tools to be specific about what information and functionality is available on an instance of a class.
+
+The `JuiceMachine` class:
+  - explicitly makes the orange_count attribute readable and writable
+  - exposes the `juice` method
+
+This makes it easier use the code we've written while maintaining a separate space where we can visit when we need to make repairs or build new features.
 
 ## What's Next
 - private methods
