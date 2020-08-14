@@ -31,7 +31,7 @@ Classes help us constrain the types of objects we use in our program to ensure t
 
 ## Code Along: Juice Machine
 ### Classes
-#### Create new file `juice_machine.rb` in this project directory.**
+#### Create new file `juice_machine.rb` in this project directory.
 `$ touch juice_machine.rb`
 
 #### define the `JuiceMachine` class.
